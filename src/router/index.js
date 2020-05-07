@@ -1,22 +1,33 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
+import ViewTelaPrincipal from '../views/ViewTelaPrincipal.vue'
+import ViewTelaCardapio from '../views/ViewTelaCardapio.vue'
+import ViewTelaPedidos from '../views/ViewTelaPedidos.vue'
+import ViewTelaLogin from '../views/ViewTelaLogin.vue'
+import ViewTelaCadastro from '../views/ViewTelaCadastro.vue'
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    name: 'ViewTelaPrincipal',
+    component: ViewTelaPrincipal
+  },{
+    path: '/ViewTelaCardapio',
+    name: 'ViewTelaCardapio',
+    component: ViewTelaCardapio
+  },{
+    path: '/ViewTelaPedidos',
+    name: 'ViewTelaPedidos',
+    component: ViewTelaPedidos
+  },{
+    path: '/ViewTelaLogin',
+    name: 'ViewTelaLogin',
+    component: ViewTelaLogin
+  },{
+    path: '/ViewTelaCadastro',
+    name: 'ViewTelaCadastro',
+    component: ViewTelaCadastro
   }
 ]
 
